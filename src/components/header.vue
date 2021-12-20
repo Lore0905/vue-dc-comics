@@ -49,7 +49,7 @@ export default {
 };
 </script>
 
-<style scoped >
+<style scoped lang="scss">
 @import '../style/variables.scss';
 
 .col{
@@ -60,23 +60,34 @@ export default {
     display: flex;
     align-items: center;
     background-color: pink;
-}
-#logo{
+
+    #logo{
     width: 80px;
+    }
 }
+
 
 .col-dx{
     width: 65%;
     background-color: lightblue;
-}
-ul{
+    
+    ul{
     display: flex;
     justify-content: center;
+    }
+        li{
+            margin: 0 7px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+            a{
+                display: block;
+                line-height: 100px;
+            }
+            a:hover{
+            color: $brand_primary_color;
+            border-bottom: 5px solid $brand_primary_color;
+            }
 }
-li{
-    margin: 7px;
-}
-a:hover{
-    color: $brand_primary_color;
-}
+
 </style>
