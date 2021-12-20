@@ -59,7 +59,6 @@ export default {
     width: 35%;
     display: flex;
     align-items: center;
-    background-color: pink;
 
     #logo{
     width: 80px;
@@ -69,7 +68,6 @@ export default {
 
 .col-dx{
     width: 65%;
-    background-color: lightblue;
     
     ul{
     display: flex;
@@ -77,7 +75,6 @@ export default {
     }
         li{
             margin: 0 7px;
-            display: inline-block;
             vertical-align: middle;
         }
             a{
