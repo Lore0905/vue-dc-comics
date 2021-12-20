@@ -96,7 +96,6 @@ export default {
         .col{
         width: calc(100% / 5);
         height: 100%;
-        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
