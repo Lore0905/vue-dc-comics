@@ -144,7 +144,7 @@
                             <img src="../assets/vue-dc-comics-1/img/footer-pinterest.png" alt="">
                         </li>
                         <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                            <img src="../assets/vue-dc-comics-1/img/footer-periscope.png" alt="">
                         </li>
                     </ul>
                 </div>
