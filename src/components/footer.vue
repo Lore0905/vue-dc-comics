@@ -131,21 +131,10 @@
                 <div class="col-dx">
                     <h2>FOLLOW US</h2>
                     <ul>
-                        <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                        <li v-for="(social, index) in socials" :key="index">
+                            <img :src= "require('../assets/vue-dc-comics-1/img/' + social.img)" :alt="social.img">
                         </li>
-                        <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-twitter.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-youtube.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-pinterest.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../assets/vue-dc-comics-1/img/footer-periscope.png" alt="">
-                        </li>
+
                     </ul>
                 </div>
            
@@ -159,6 +148,27 @@
 <script>
 export default {
     name: "Footer",
+    data: function(){
+        return{
+            socials: [
+                {
+                    img: "footer-facebook.png"
+                },
+                {
+                    img: "footer-twitter.png"
+                },
+                {
+                    img: "footer-youtube.png"
+                },
+                {
+                    img: "footer-pinterest.png"
+                },
+                {
+                    img: "footer-periscope.png"
+                },
+            ]
+        }
+    }
 };
 </script>
 
