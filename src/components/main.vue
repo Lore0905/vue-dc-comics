@@ -73,13 +73,13 @@ export default {
 
 #first-part-main{
     background-color: $brand_secondary_color;
-    height: 150px;
     display: flex;
     align-items: center;
 
     .container{
         color: white;
         font-size: 30px;
+        padding: 60px 0;
     }
         .text{
             padding: 0 10px;
@@ -87,18 +87,16 @@ export default {
 }
 #second-part-main{
     background-color: $brand_primary_color;
-    height: 150px;
     
     .container{
     height: 100%;
-
-
+    
         .col{
         width: calc(100% / 5);
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 60px 0;
         }
 
         .col-img{

@@ -176,17 +176,11 @@ export default {
     .col{
         width: calc(100% / 2);
         display: flex;
-
-        .col-sx{
-            width: 40%;
-        
-        }
         
     }
     .col-dx{
         background-image: url("../assets/vue-dc-comics-1/img/dc-logo-bg.png");
         height: 100%;
-        width: 50%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -194,8 +188,7 @@ export default {
     }
 }
 .col-inside{
-    width: calc(100% / 4);
-    max-height: 90%;
+    width: calc((100% / 3) - 70px);
 
         h2{
             color:$white-color;
@@ -203,15 +196,16 @@ export default {
             padding: 10px 0px;
         }
         
-        li{
-            padding: 5px 0;
+        ul{
+            li{
+                padding: 5px 0;
 
-            a{
-                color: rgb(155, 152, 152);
-                font-size: 14-px;
+                a{
+                    color: rgb(155, 152, 152);
+                    font-size: 14-px;
+                }
             }
-        }
-            
+        }   
     }
 .container{
     height: 100%;
