@@ -124,6 +124,33 @@
 
         </section>
        <section class="share-sites">
+           <div class="container">
+                <div class="col-sx">
+                    <button>SIGN-UP NOW</button>
+                </div>
+                <div class="col-dx">
+                    <h2>FOLLOW US</h2>
+                    <ul>
+                        <li>
+                            <img src="../assets/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/vue-dc-comics-1/img/footer-twitter.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/vue-dc-comics-1/img/footer-youtube.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/vue-dc-comics-1/img/footer-pinterest.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../assets/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+           
+
+            </div>
 
        </section>
     </footer>
@@ -168,6 +195,7 @@ export default {
 }
 .col-inside{
     width: calc(100% / 4);
+    max-height: 90%;
 
         h2{
             color:$white-color;
@@ -176,12 +204,11 @@ export default {
         }
         
         li{
-            padding: 3px 0;
+            padding: 5px 0;
 
             a{
                 color: rgb(155, 152, 152);
                 font-size: 14-px;
-                padding: 10px 0;
             }
         }
             
@@ -191,5 +218,44 @@ export default {
     display: flex;
     align-items: center;
 }
+.share-sites{
+    background-color: #303030;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+    .col-sx{
+        flex-grow: 1;
+        button{
+            padding: 10px;
+            border: 2px solid $brand_primary_color;
+            background-color: #303030;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+    .col-dx{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+
+        h2{
+            color:$brand_primary_color;
+            padding: 0 20px;
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 0 7px ;
+            }
+        }
+        
+
+    }
+}
+
 
 </style>
