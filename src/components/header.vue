@@ -7,36 +7,10 @@
         
         <div class="col col-dx">
             <ul>
-                <li>
-                    <a href="#">CHARACTERS</a>
+                <li v-for="(link, index) in links" :key="index">
+                    <a :href="link.url">{{link.text}}</a>
                 </li>
-                <li>
-                    <a href="#">COMICS</a>
-                </li>
-                <li>
-                    <a href="#">MOVIES</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#">COLLECTIBLES</a>
-                </li>
-                <li>
-                    <a href="#">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="#">FANS</a>
-                </li>
-                <li>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                    <a href="#">SHOP</a>
-                </li>
+                
             </ul>
         </div>
 
@@ -46,6 +20,52 @@
 <script>
 export default {
     name: "Header",
+    data: function() {
+        return {
+            links: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#'
+                },
+                {
+                    text: 'COMICS',
+                    url: '#'
+                },
+                {
+                    text: 'MOVIES',
+                    url: '#'
+                },
+                {
+                    text: 'TV',
+                    url: '#'
+                },
+                {
+                    text: 'GAMES',
+                    url: '#'
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#'
+                },
+                {
+                    text: 'VIDEOS',
+                    url: '#'
+                },
+                {
+                    text: 'FANS',
+                    url: '#'
+                },
+                {
+                    text: 'NEWS',
+                    url: '#'
+                },
+                {
+                    text: 'SHOP',
+                    url: '#'
+                },
+            ]
+        }
+    }
         
         
     
@@ -78,15 +98,14 @@ export default {
     }
         li{
             margin: 0 7px;
-            vertical-align: middle;
         }
             a{
                 display: block;
-                line-height: 100px;
+                line-height: 95px;
             }
             a:hover{
-            color: $brand_primary_color;
-            border-bottom: 5px solid $brand_primary_color;
+                color: $brand_primary_color;
+                border-bottom: 5px solid $brand_primary_color;
             }
 }
 

@@ -11,51 +11,14 @@
         <section id="second-part-main" >
             <div class="container">
                 <!-- col -->
-                <div class="col">
+                <div class="col" v-for="(item, index) in items" :key="index">
                     <div class="col-img">
-                        <img src="../assets/vue-dc-comics-1/img/buy-comics-digital-comics.png" alt="buy-comics-digital-comics.png">
+                        <img :src="'../assets/vue-dc-comics-1/img/' + item.img">
                     </div>
                     <div class="col-text">
-                        DIGITAL COMICS
+                        {{item.text}}
                     </div>
-                </div>
-                <!-- col -->
-                <div class="col">
-                    <div class="col-img">
-                        <img src="../assets/vue-dc-comics-1/img/buy-comics-merchandise.png" alt="buy-comics-digital-comics.png">
-                    </div>
-                    <div class="col-text">
-                        DC MERCHANDISE
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col">
-                    <div class="col-img">
-                        <img src="../assets/vue-dc-comics-1/img/buy-comics-subscriptions.png" alt="buy-comics-digital-comics.png">
-                    </div>
-                    <div class="col-text">
-                        SUBSRIPTION
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col">
-                    <div class="col-img">
-                        <img src="../assets/vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="buy-comics-digital-comics.png">
-                    </div>
-                    <div class="col-text">
-                        COMICS SHOP LOCATOR
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col">
-                    <div class="col-img">
-                        <img src="../assets/vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="buy-comics-digital-comics.png">
-                    </div>
-                    <div class="col-text">
-                        DC PWER VISA
-                    </div>
-                </div>
-                
+                </div>                
             </div>
         </section>
         
@@ -65,6 +28,32 @@
 <script>
 export default {
     name: "Main",
+    data: function(){
+        return{
+            items: [
+                {
+                    img: "buy-comics-digital-comics.png",
+                    text: "DIGITAL COMICS"
+                },
+                {
+                    img: "buy-comics-merchandise.png",
+                    text: "DC MERCHANDISE"
+                },
+                {
+                    img: "buy-comics-subscriptions.png",
+                    text: "SUBSRIPTION"
+                },
+                {
+                    img: "buy-comics-shop-locator.png",
+                    text: "COMICS SHOP LOCATOR"
+                },
+                {
+                    img: "buy-comics-shop-locator.png",
+                    text: "DC PWER VISA"
+                }
+            ]
+        }
+    }
 };
 </script>
 
@@ -90,7 +79,7 @@ export default {
     
     .container{
     height: 100%;
-    
+
         .col{
         width: calc(100% / 5);
         display: flex;
