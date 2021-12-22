@@ -2,6 +2,7 @@
   <div id="app">
 
     <Header />
+    <ComicsList />
     <Main />
     <Footer />
   </div>
@@ -12,6 +13,8 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
+import ComicsList from "./components/ComicsList.vue";
+
 
 export default {
   name: "App",
@@ -19,6 +22,8 @@ export default {
     Header,
     Main,
     Footer,
+    ComicsList,
+
   },
 };
 </script>
