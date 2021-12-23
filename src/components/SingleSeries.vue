@@ -27,11 +27,24 @@ export default {
 <style scoped lang="scss">
 .single-serie{
     width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
     .img-serie{
-        margin: auto;
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+        padding-bottom: 20px 0px;
+        
+
+        img{
+            display: block;
+        }
     }
     h4{
-        margin: auto;
+        padding: 20px 0;
+        text-transform: uppercase;
     }
 }
 </style>

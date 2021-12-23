@@ -1,13 +1,6 @@
 
 <template>
     <main>
-        <section id="first-part-main">
-            <div class="container">
-                <div>--<i class="fas fa-chevron-right"></i></div>
-                <div class="text">Content goes here</div>
-                <div><i class="fas fa-chevron-left">--</i></div>
-            </div>
-        </section>
         <section id="second-part-main" >
             <div class="container">
                 <!-- col -->
@@ -60,20 +53,6 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables.scss';
 
-#first-part-main{
-    background-color: $brand_secondary_color;
-    display: flex;
-    align-items: center;
-
-    .container{
-        color: white;
-        font-size: 30px;
-        padding: 60px 0;
-    }
-        .text{
-            padding: 0 10px;
-        }
-}
 #second-part-main{
     background-color: $brand_primary_color;
     

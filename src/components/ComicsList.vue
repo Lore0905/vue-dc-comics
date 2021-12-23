@@ -5,23 +5,31 @@
             <img src="../assets/vue-dc-comics-1/img/jumbotron.jpg" alt="Banner">
         </div>
 
-        <div class="container">
+        <section class="wrap-serie">
+            <div class="container">
                     <!-- text -->
-            <div class="banner-text">
-                <h3>CURRENT SERIES</h3>
-            </div>
+                <div class="banner-text">
+                    <h3>CURRENT SERIES</h3>
+                </div>
 
-            <!-- list item -->
-            <div class="single-serie">
-                <SingleSeries v-for="(serie, index) in series" :key="index" :seriesObject="serie"/>
+                <!-- list item -->
+                <div class="single-serie">
+                    <SingleSeries v-for="(serie, index) in series" :key="index" :seriesObject="serie"/>
+                </div>
+
+                   <!-- button -->
+                <div class="button-more">
+                    <button>LOAD MORE</button>
+                </div>
             </div>
-        </div>
+        </section>
 
     </section>
 </template>
 
 <script>
 import SingleSeries from "./SingleSeries.vue";
+
 
 export default {
     name: "ComicsList",
@@ -110,6 +118,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables.scss';
 .banner{
     height: 400px;
     width: 100%;
@@ -122,15 +131,38 @@ export default {
         object-position: top;
     }
 }
-.container{
-    display: block;
-    border: 1px solid black;
-    .banner-text{
+.wrap-serie{
+    background-color: $brand_secondary_color;
+    padding-bottom: 30px;
 
-    }
-    .single-serie{
-        display: flex;
-        flex-wrap: wrap;
+    .container{
+    display: block;
+    
+        .banner-text{
+            background-color: $brand_primary_color;
+            color: white;
+            display: inline-block;
+            padding: 7px 10px;
+            position: relative;
+            top: -19px;
+        }
+        .single-serie{
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+        }
+        .button-more{
+            text-align: center;
+            margin-top: 40px;
+            button{
+                background-color: $brand_primary_color;
+                border: 0px;
+                color: white;
+                padding: 10px 50px;
+                cursor: pointer;
+                
+            }
+        }
     }
 }
 </style>
